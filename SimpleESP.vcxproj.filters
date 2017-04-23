@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Quelldateien">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Source SDK Header">
+      <UniqueIdentifier>{caf9d5ce-3779-4bc9-929f-4ac776428ba3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Only Classes">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Namespaces">
+      <UniqueIdentifier>{f517b958-9c0d-42e6-9f74-db7bb2d0e5db}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="dllmain.cxx">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="cDrawing.cxx">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="cExterns.cxx">
+      <Filter>Namespaces</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="cBaseEntity.hxx">
+      <Filter>Header Only Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="cColor.hxx">
+      <Filter>Header Only Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="cNetVars.hxx">
+      <Filter>Header Only Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="cUsing.hxx">
+      <Filter>Header Only Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="cVTable.hxx">
+      <Filter>Header Only Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="cDrawing.hxx">
+      <Filter>Header Only Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="cMemoryUtil.h">
+      <Filter>Header Only Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="cBaseClientDll.hxx">
+      <Filter>Source SDK Header</Filter>
+    </ClInclude>
+    <ClInclude Include="cClientClass.hxx">
+      <Filter>Source SDK Header</Filter>
+    </ClInclude>
+    <ClInclude Include="cClientEntityList.hxx">
+      <Filter>Source SDK Header</Filter>
+    </ClInclude>
+    <ClInclude Include="cCollideable.h">
+      <Filter>Source SDK Header</Filter>
+    </ClInclude>
+    <ClInclude Include="cEngineClient.hxx">
+      <Filter>Source SDK Header</Filter>
+    </ClInclude>
+    <ClInclude Include="cPanel.hxx">
+      <Filter>Source SDK Header</Filter>
+    </ClInclude>
+    <ClInclude Include="cPlayerInfo.hxx">
+      <Filter>Source SDK Header</Filter>
+    </ClInclude>
+    <ClInclude Include="cRecvTable.hxx">
+      <Filter>Source SDK Header</Filter>
+    </ClInclude>
+    <ClInclude Include="cSurface.hxx">
+      <Filter>Source SDK Header</Filter>
+    </ClInclude>
+    <ClInclude Include="cVector.hxx">
+      <Filter>Source SDK Header</Filter>
+    </ClInclude>
+    <ClInclude Include="cVector2D.hxx">
+      <Filter>Source SDK Header</Filter>
+    </ClInclude>
+    <ClInclude Include="cVertex.hxx">
+      <Filter>Source SDK Header</Filter>
+    </ClInclude>
+    <ClInclude Include="cVMatrix.hxx">
+      <Filter>Source SDK Header</Filter>
+    </ClInclude>
+    <ClInclude Include="eClassId.hxx">
+      <Filter>Source SDK Header</Filter>
+    </ClInclude>
+    <ClInclude Include="cExterns.hxx">
+      <Filter>Namespaces</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
