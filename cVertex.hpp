@@ -1,5 +1,5 @@
 #pragma once
-#include "cVector2D.hxx"
+#include "cVector2D.hpp"
 
 struct cVertex
 {

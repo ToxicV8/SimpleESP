@@ -1,5 +1,5 @@
 #pragma once
-#include "cRecvTable.hxx"
+#include "cRecvTable.hpp"
 
 class cClientClass
 {

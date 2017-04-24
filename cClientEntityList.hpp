@@ -1,5 +1,5 @@
 #pragma once
-#include "cBaseEntity.hxx"
+#include "cBaseEntity.hpp"
 
 class cClientEntityList
 {

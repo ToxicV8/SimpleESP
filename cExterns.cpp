@@ -1,4 +1,4 @@
-#include "cExterns.hxx"
+#include "cExterns.hpp"
 
 namespace Instances {
 std::shared_ptr<cNetVars> NetVars;  /* The net variables */
@@ -19,4 +19,10 @@ std::shared_ptr<cVTable> Panel; /* The panel */
 
 namespace HookedMethods {
 PaintTraverseFn oPaintTraverse; /* The paint traverse */
+}
+
+namespace Colors {
+cColor Outline = cColor( 0, 0, 0, 255 );
+cColor Terrorist = cColor( 255, 0, 0, 255 );
+cColor CounterTerrorist = cColor( 0, 0, 255, 255 );
 }

@@ -1,7 +1,7 @@
 #pragma once
-#include "cSurface.hxx"
+#include "cSurface.hpp"
 #include <string>
-#include "cVector.hxx"
+#include "cVector.hpp"
 #include <vector>
 
 class cDrawing

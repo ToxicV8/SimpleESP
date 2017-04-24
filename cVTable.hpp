@@ -70,8 +70,8 @@ private:
     /*Gets VMT count*/
     int GetCount() const
     {
-        auto index = 0;
-        auto table = ( (void**)pOrgTable );
+        int index = 0;
+        void** table = reinterpret_cast<void**>( pOrgTable );
         for( void* fn; ( fn = table[ index ] ) != nullptr; index++ ) {
             if( !this->CanReadPointer( fn ) ) break;
         }

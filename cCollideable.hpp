@@ -1,5 +1,5 @@
 #pragma once
-#include "cVector.hxx"
+#include "cVector.hpp"
 
 class cCollideable
 {

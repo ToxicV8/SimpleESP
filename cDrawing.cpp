@@ -1,5 +1,5 @@
-#include "cDrawing.hxx"
-#include "cExterns.hxx"
+#include "cDrawing.hpp"
+#include "cExterns.hpp"
 
 #ifdef CreateFont
 #undef CreateFont
@@ -19,7 +19,7 @@ HFont cDrawing::MakeFont( const std::string& name, int iSize, int iWeight, int i
 
 bool cDrawing::ScreenTransform( const cVector& WorldPos, cVector& ScreenPos )
 {
-    auto worldToScreen = Interfaces::EngineClient->WorldToScreenMatrix();
+    const cVMatrix& worldToScreen = Interfaces::EngineClient->WorldToScreenMatrix();
 
     ScreenPos.x = worldToScreen.m[ 0 ][ 0 ] * WorldPos.x + worldToScreen.m[ 0 ][ 1 ] * WorldPos.y + worldToScreen.m[ 0 ][ 2 ] * WorldPos.z + worldToScreen.m[ 0 ][ 3 ];
     ScreenPos.y = worldToScreen.m[ 1 ][ 0 ] * WorldPos.x + worldToScreen.m[ 1 ][ 1 ] * WorldPos.y + worldToScreen.m[ 1 ][ 2 ] * WorldPos.z + worldToScreen.m[ 1 ][ 3 ];

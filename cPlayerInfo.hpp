@@ -17,3 +17,11 @@ public:
     unsigned long m_dwCustomFiles[ 4 ];
     char m_FilesDownloaded;
 };
+
+enum eEntityTeam
+{
+    None,
+    Spectator,
+    Terrorist,
+    CounterTerrorist
+};

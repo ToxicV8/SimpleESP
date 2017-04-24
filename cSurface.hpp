@@ -1,7 +1,7 @@
 #pragma once
-#include "cPanel.hxx"
-#include "cColor.hxx"
-#include "cVertex.hxx"
+#include "cPanel.hpp"
+#include "cColor.hpp"
+#include "cVertex.hpp"
 
 using HFont = unsigned int;
 

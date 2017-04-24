@@ -145,9 +145,9 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="cDrawing.cxx" />
-    <ClCompile Include="cExterns.cxx" />
-    <ClCompile Include="dllmain.cxx">
+    <ClCompile Include="cDrawing.cpp" />
+    <ClCompile Include="cExterns.cpp" />
+    <ClCompile Include="dllmain.cpp">
       <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</CompileAsManaged>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
       </PrecompiledHeader>
@@ -163,28 +163,28 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="cBaseClientDll.hxx" />
-    <ClInclude Include="cBaseEntity.hxx" />
-    <ClInclude Include="cClientClass.hxx" />
-    <ClInclude Include="cClientEntityList.hxx" />
-    <ClInclude Include="cCollideable.h" />
-    <ClInclude Include="cColor.hxx" />
-    <ClInclude Include="cDrawing.hxx" />
-    <ClInclude Include="cExterns.hxx" />
-    <ClInclude Include="cMemoryUtil.h" />
-    <ClInclude Include="cNetVars.hxx" />
-    <ClInclude Include="cPanel.hxx" />
-    <ClInclude Include="cPlayerInfo.hxx" />
-    <ClInclude Include="cRecvTable.hxx" />
-    <ClInclude Include="cSurface.hxx" />
-    <ClInclude Include="cUsing.hxx" />
-    <ClInclude Include="cVector.hxx" />
-    <ClInclude Include="cVector2D.hxx" />
-    <ClInclude Include="cVertex.hxx" />
-    <ClInclude Include="cVMatrix.hxx" />
-    <ClInclude Include="cVTable.hxx" />
-    <ClInclude Include="cEngineClient.hxx" />
-    <ClInclude Include="eClassId.hxx" />
+    <ClInclude Include="cBaseClientDll.hpp" />
+    <ClInclude Include="cBaseEntity.hpp" />
+    <ClInclude Include="cClientClass.hpp" />
+    <ClInclude Include="cClientEntityList.hpp" />
+    <ClInclude Include="cCollideable.hpp" />
+    <ClInclude Include="cColor.hpp" />
+    <ClInclude Include="cDrawing.hpp" />
+    <ClInclude Include="cExterns.hpp" />
+    <ClInclude Include="cMemoryUtil.hpp" />
+    <ClInclude Include="cNetVars.hpp" />
+    <ClInclude Include="cPanel.hpp" />
+    <ClInclude Include="cPlayerInfo.hpp" />
+    <ClInclude Include="cRecvTable.hpp" />
+    <ClInclude Include="cSurface.hpp" />
+    <ClInclude Include="cUsing.hpp" />
+    <ClInclude Include="cVector.hpp" />
+    <ClInclude Include="cVector2D.hpp" />
+    <ClInclude Include="cVertex.hpp" />
+    <ClInclude Include="cVMatrix.hpp" />
+    <ClInclude Include="cVTable.hpp" />
+    <ClInclude Include="cEngineClient.hpp" />
+    <ClInclude Include="eClassId.hpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

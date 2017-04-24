@@ -1,20 +1,21 @@
 #pragma once
 
 #include <memory>
-#include "cNetVars.hxx"
-#include "cDrawing.hxx"
+#include "cNetVars.hpp"
+#include "cDrawing.hpp"
+
 namespace Instances {
 extern std::shared_ptr<cNetVars> NetVars;
 extern std::shared_ptr<cDrawing> Drawing;
 }
 
-#include "cBaseClientDll.hxx"
-#include "cVTable.hxx"
-#include "cPanel.hxx"
-#include "cUsing.hxx"
-#include "cEngineClient.hxx"
-#include "cSurface.hxx"
-#include "cClientEntityList.hxx"
+#include "cBaseClientDll.hpp"
+#include "cVTable.hpp"
+#include "cPanel.hpp"
+#include "cUsing.hpp"
+#include "cEngineClient.hpp"
+#include "cSurface.hpp"
+#include "cClientEntityList.hpp"
 
 namespace Interfaces {
 
@@ -36,11 +37,11 @@ using CreateInterfaceFn = void*( * )( const char*, int* );
 template<typename T>
 std::shared_ptr<T> GetInterface( const std::string& module, const std::string& name )
 {
-    auto Module = GetModuleHandleA( module.c_str() );
+    HMODULE Module = GetModuleHandleA( module.c_str() );
 
     if( Module ) {
 
-        auto ProcAddress = GetProcAddress( Module, "CreateInterface" );
+        FARPROC ProcAddress = GetProcAddress( Module, "CreateInterface" );
 
         if( ProcAddress ) {
             return std::shared_ptr<T>( reinterpret_cast<T*>( reinterpret_cast<CreateInterfaceFn>( ProcAddress )( name.c_str(), nullptr ) ) );
@@ -64,4 +65,10 @@ extern std::shared_ptr<cVTable> Panel;  /* The panel */
 
 namespace HookedMethods {
 extern PaintTraverseFn oPaintTraverse;  /* The paint traverse */
+}
+
+namespace Colors {
+extern cColor Outline;
+extern cColor Terrorist;
+extern cColor CounterTerrorist;
 }

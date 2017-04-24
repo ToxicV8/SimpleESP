@@ -17,82 +17,82 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="dllmain.cxx">
-      <Filter>Quelldateien</Filter>
-    </ClCompile>
-    <ClCompile Include="cDrawing.cxx">
-      <Filter>Quelldateien</Filter>
-    </ClCompile>
-    <ClCompile Include="cExterns.cxx">
+    <ClCompile Include="cExterns.cpp">
       <Filter>Namespaces</Filter>
+    </ClCompile>
+    <ClCompile Include="cDrawing.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="dllmain.cpp">
+      <Filter>Quelldateien</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="cBaseEntity.hxx">
+    <ClInclude Include="cBaseEntity.hpp">
       <Filter>Header Only Classes</Filter>
     </ClInclude>
-    <ClInclude Include="cColor.hxx">
+    <ClInclude Include="cColor.hpp">
       <Filter>Header Only Classes</Filter>
     </ClInclude>
-    <ClInclude Include="cNetVars.hxx">
+    <ClInclude Include="cDrawing.hpp">
       <Filter>Header Only Classes</Filter>
     </ClInclude>
-    <ClInclude Include="cUsing.hxx">
+    <ClInclude Include="cMemoryUtil.hpp">
       <Filter>Header Only Classes</Filter>
     </ClInclude>
-    <ClInclude Include="cVTable.hxx">
+    <ClInclude Include="cNetVars.hpp">
       <Filter>Header Only Classes</Filter>
     </ClInclude>
-    <ClInclude Include="cDrawing.hxx">
+    <ClInclude Include="cUsing.hpp">
       <Filter>Header Only Classes</Filter>
     </ClInclude>
-    <ClInclude Include="cMemoryUtil.h">
+    <ClInclude Include="cVTable.hpp">
       <Filter>Header Only Classes</Filter>
     </ClInclude>
-    <ClInclude Include="cBaseClientDll.hxx">
-      <Filter>Source SDK Header</Filter>
-    </ClInclude>
-    <ClInclude Include="cClientClass.hxx">
-      <Filter>Source SDK Header</Filter>
-    </ClInclude>
-    <ClInclude Include="cClientEntityList.hxx">
-      <Filter>Source SDK Header</Filter>
-    </ClInclude>
-    <ClInclude Include="cCollideable.h">
-      <Filter>Source SDK Header</Filter>
-    </ClInclude>
-    <ClInclude Include="cEngineClient.hxx">
-      <Filter>Source SDK Header</Filter>
-    </ClInclude>
-    <ClInclude Include="cPanel.hxx">
-      <Filter>Source SDK Header</Filter>
-    </ClInclude>
-    <ClInclude Include="cPlayerInfo.hxx">
-      <Filter>Source SDK Header</Filter>
-    </ClInclude>
-    <ClInclude Include="cRecvTable.hxx">
-      <Filter>Source SDK Header</Filter>
-    </ClInclude>
-    <ClInclude Include="cSurface.hxx">
-      <Filter>Source SDK Header</Filter>
-    </ClInclude>
-    <ClInclude Include="cVector.hxx">
-      <Filter>Source SDK Header</Filter>
-    </ClInclude>
-    <ClInclude Include="cVector2D.hxx">
-      <Filter>Source SDK Header</Filter>
-    </ClInclude>
-    <ClInclude Include="cVertex.hxx">
-      <Filter>Source SDK Header</Filter>
-    </ClInclude>
-    <ClInclude Include="cVMatrix.hxx">
-      <Filter>Source SDK Header</Filter>
-    </ClInclude>
-    <ClInclude Include="eClassId.hxx">
-      <Filter>Source SDK Header</Filter>
-    </ClInclude>
-    <ClInclude Include="cExterns.hxx">
+    <ClInclude Include="cExterns.hpp">
       <Filter>Namespaces</Filter>
+    </ClInclude>
+    <ClInclude Include="cBaseClientDll.hpp">
+      <Filter>Source SDK Header</Filter>
+    </ClInclude>
+    <ClInclude Include="cClientClass.hpp">
+      <Filter>Source SDK Header</Filter>
+    </ClInclude>
+    <ClInclude Include="cClientEntityList.hpp">
+      <Filter>Source SDK Header</Filter>
+    </ClInclude>
+    <ClInclude Include="cCollideable.hpp">
+      <Filter>Source SDK Header</Filter>
+    </ClInclude>
+    <ClInclude Include="cEngineClient.hpp">
+      <Filter>Source SDK Header</Filter>
+    </ClInclude>
+    <ClInclude Include="cPanel.hpp">
+      <Filter>Source SDK Header</Filter>
+    </ClInclude>
+    <ClInclude Include="cPlayerInfo.hpp">
+      <Filter>Source SDK Header</Filter>
+    </ClInclude>
+    <ClInclude Include="cRecvTable.hpp">
+      <Filter>Source SDK Header</Filter>
+    </ClInclude>
+    <ClInclude Include="cSurface.hpp">
+      <Filter>Source SDK Header</Filter>
+    </ClInclude>
+    <ClInclude Include="cVector.hpp">
+      <Filter>Source SDK Header</Filter>
+    </ClInclude>
+    <ClInclude Include="cVector2D.hpp">
+      <Filter>Source SDK Header</Filter>
+    </ClInclude>
+    <ClInclude Include="cVertex.hpp">
+      <Filter>Source SDK Header</Filter>
+    </ClInclude>
+    <ClInclude Include="cVMatrix.hpp">
+      <Filter>Source SDK Header</Filter>
+    </ClInclude>
+    <ClInclude Include="eClassId.hpp">
+      <Filter>Source SDK Header</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

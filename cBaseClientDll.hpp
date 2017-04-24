@@ -1,5 +1,5 @@
 #pragma once
-#include "cClientClass.hxx"
+#include "cClientClass.hpp"
 
 class cBaseClientDll
 {

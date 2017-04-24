@@ -1,9 +1,9 @@
 #pragma once
 #include <string>
 #include <vector>
-#include "cRecvTable.hxx"
+#include "cRecvTable.hpp"
 #include <Windows.h>
-#include "cClientClass.hxx"
+#include "cClientClass.hpp"
 
 class cNetVars
 {
@@ -77,14 +77,14 @@ inline cNetVars::cNetVars( cClientClass* pClasses )
 
 inline unsigned long cNetVars::GetOffset( const std::string& table, const std::string& prop )
 {
-    auto Table = GetTableByName( table );
+    cRecvTable* Table = GetTableByName( table );
 
     return GetOffsetByProp( Table, prop );
 }
 
 inline cRecvTable* cNetVars::GetTableByName( const std::string& tablename )
 {
-    for( auto table : tables ) {
+    for( cRecvTable* table : tables ) {
         if( table && !strcmp( table->pNetTableName, tablename.c_str() ) )
             return table;
     }
@@ -94,18 +94,18 @@ inline cRecvTable* cNetVars::GetTableByName( const std::string& tablename )
 
 inline unsigned long cNetVars::GetOffsetByProp( const cRecvTable* pTable, const std::string& prop )
 {
-    auto Extra = 0;
+    int Extra = 0;
 
     if( pTable ) {
 
         for( int i = 0; i < pTable->nProps; i++ ) {
 
-            auto Prop = &pTable->pProps[ i ];
-            auto ChildTable = Prop->pDataTable;
+            cRecvProp* Prop = &pTable->pProps[ i ];
+            cRecvTable* ChildTable = Prop->pDataTable;
 
             if( ChildTable && ChildTable->nProps > 0 ) {
 
-                auto iChildOffset = GetOffsetByProp( ChildTable, prop );
+                int iChildOffset = GetOffsetByProp( ChildTable, prop );
 
                 if( iChildOffset ) {
                     Extra += Prop->iOffset + iChildOffset;

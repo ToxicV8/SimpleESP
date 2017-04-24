@@ -1,7 +1,7 @@
 #pragma once
-#include "cVector.hxx"
-#include "cPlayerInfo.hxx"
-#include "cVMatrix.hxx"
+#include "cVector.hpp"
+#include "cPlayerInfo.hpp"
+#include "cVMatrix.hpp"
 
 class cEngineClient
 {
